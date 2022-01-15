@@ -57,15 +57,7 @@ body
     font-family: 'JetBrains Mono';
 }
 
-/*Main div*/
-div.main
-{
-    width: 80vw;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-div.main h1
+h1
 {
     text-align: center;
     color: grey;
@@ -74,20 +66,20 @@ div.main h1
     padding: 5vw;
 }
 
-div.main p
+div
+{
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p
 {
     font-size: 15px;
     color: rgb(89, 89, 89);
 }
 
-div.main ul
-{
-    margin-top: 10vh;
-    display: flex;
-    justify-content: center;
-}
-
-div.main li a
+a
 {
     background-color: #4CAF50; /* Green */
     border: none;
@@ -97,50 +89,24 @@ div.main li a
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 10px;
 }
 
-/*Création div*/
-div.creation
-{
-    width: 80vw;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-div.creation h1
-{
-    text-align: center;
-    color: grey;
-    font-size: 30px;
-    font-weight: bold;
-    padding: 5vw; 
-}
-
-div.creation ul
+ul
 {
     margin-top: 10vh;
     display: flex;
     justify-content: center;
 }
 
-/*Carte de création css*/
-div.creation ul li
-{
-    width: 500px;
-    height: auto;
-    margin: 10px;
-}
-
 /*Screenshot du site à prendre avec https://pikwy.com/ en 1920*1080*/
-div.creation ul li img
+img
 {
     max-width: 100%;
     max-height: 100%;
     object-fit: cover;
 }
 
-div.creation ul li h2
+h2
 {
     color: grey;
     font-size: 20px;
@@ -148,95 +114,26 @@ div.creation ul li h2
     padding-top: 1vw;
 }
 
-div.creation ul li p
+div#creation ul li, div#offres ul li
 {
-    font-size: 15px;
-    color: rgb(89, 89, 89);
+    width: 500px;
+    height: auto;
+    margin: 10px;
 }
 
-div.creation ul li a
+/*Css du main*/
+div#main a
 {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 10px 0 10px 0;
+    margin: 10px;
 }
 
 /*Offres div*/
-div.offres
-{
-    width: 80vw;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-div.offres h1
-{
-    text-align: center;
-    color: grey;
-    font-size: 30px;
-    font-weight: bold;
-    padding: 5vw; 
-}
-div.offres h3
+div#offres h3
 {
     color: rgb(46, 46, 46);
     font-size: 15px;
     font-weight: bold;
     padding-top: 5px;
-}
-div.offres ul
-{
-    margin-top: 10vh;
-    display: flex;
-    justify-content: center;
-}
-
-/*Carte d'offres css*/
-div.offres ul li
-{
-    width: 500px;
-    height: auto;
-    margin: 10px;
-}
-
-div.offres ul li img
-{
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: cover;
-}
-
-div.offres ul li h2
-{
-    color: grey;
-    font-size: 20px;
-    font-weight: bold;
-    padding-top: 1vw;
-}
-
-div.offres ul li p
-{
-    font-size: 15px;
-    color: rgb(89, 89, 89);
-}
-
-div.offres ul li a
-{
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 10px 0 10px 0;
 }
 
 /*Footer*/
@@ -244,10 +141,19 @@ footer
 {
     text-align: center;
 }
+
 footer p
 {
     padding: 1vh;
     color: black;
     font-size: 15px;
     font-weight: bold;
+}
+
+@media screen and (max-width: 520px) 
+{
+    ul
+    {
+        flex-wrap: wrap;
+    }
 }
